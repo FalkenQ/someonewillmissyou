@@ -19,6 +19,7 @@ a {
     color: inherit
 }
 
+/* Början av Header styling */
 
 .header-navigation a {
     color: white;
@@ -50,6 +51,18 @@ header {
     filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5));
 }
 
+.header-navigation :hover {
+    color: rgb(253, 252, 252);
+    text-shadow: 0 0 8px rgb(252, 252, 252);
+}
+
+a h1:hover {
+    color: rgb(253, 252, 252);
+    text-shadow: 0 0 8px rgb(252, 252, 252);
+}
+
+/* Slutet av Header styling */
+
 .main-navigation a {
     color: white;
 }
@@ -62,13 +75,13 @@ header {
 }
 
 #find {
-    background-color: yellow;
+    background-color: rgb(255, 196, 0);
     border-radius: 25px;
     border-style: solid;
-    border-color: rgb(163, 180, 9);
+    border-color: rgb(207, 160, 4);
     border-width: 2px;
     padding: 1rem;
-    padding-left: 2.5rem;
+    padding-left: 3.5rem;
     padding-right: 3rem;
     margin-right: 2rem;
     color: black;
@@ -76,7 +89,14 @@ header {
     font-size: 1rem;
     font-weight: bold;
     filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
-    box-shadow: 0 0 10px yellow;
+    box-shadow: 0 0 10px rgb(255, 196, 0);
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.main-navigation #find:hover {
+    background-color: rgb(200, 214, 6);
+    color: rgb(0, 0, 0);
+    transform: translateY(-2px);
 }
 
 #help {
@@ -95,6 +115,13 @@ header {
     font-weight: bold;
     filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
     box-shadow: 0 0 10px #0387bb50;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.main-navigation #help:hover {
+    background-color: #02b7ff50;
+    color: rgb(0, 0, 0);
+    transform: translateY(-2px);
 }
 
 h2 {
