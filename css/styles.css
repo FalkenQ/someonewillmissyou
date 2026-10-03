@@ -193,11 +193,20 @@ h2 {
     transform: translateY(-2px);
 }
 
+.support-card1 .support-button:hover,
+.support-card2 .support-button:hover,
+.support-card3 .support-button:hover {
+    background-color: rgb(199, 154, 5);
+    color: rgb(0, 0, 0);
+    transform: translateY(-2px);
+}
+
 .support-cards img {
     background-color: #029aff50;
     padding: 1rem;
     border-radius: 100px;
     width: 40px;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
 }
 
 .support-heading {
@@ -210,6 +219,7 @@ h2 {
 .support-button {
     background-color: rgb(255, 196, 0);
     font-size: 15px;
+    text-align: center;
     font-weight: bold;
     border-radius: 10px;
     display: block;
