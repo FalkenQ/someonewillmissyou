@@ -70,7 +70,7 @@ a h1:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 #find {
@@ -82,7 +82,6 @@ a h1:hover {
     padding: 1rem;
     padding-left: 3.5rem;
     padding-right: 2.5rem;
-    margin-right: 4rem;
     color: black;
     font-family: poppins;
     font-size: 1rem;
@@ -106,8 +105,6 @@ a h1:hover {
     border-color: #0362bb60;
     padding: 1rem;
     padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    margin-left: 2rem;
     color: white;
     font-family: poppins;
     font-size: 1rem;
@@ -142,14 +139,14 @@ h2 {
     font-size: 2rem;
     width: 650px;
     margin: auto;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3.5rem;
     filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
 }
 
 /* Support cards sektionen */
 .support-cards {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: center;
     margin-top: 150px;
     gap: 40px;
@@ -158,6 +155,8 @@ h2 {
 .support-card1,
 .support-card2,
 .support-card3 {
+    display: flex;
+    flex-direction: column;
     background-color: #0362bb25;
     border-radius: 15px;
     border-style: solid;
@@ -173,12 +172,14 @@ h2 {
 .support-cards h2{
     color: white;
     font-size: 23px;
+    margin-top: auto;
     filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
 }
 
 .support-cards p {
     color: white;
     padding-left: 6.5rem;
+    padding-bottom: 1rem;
     font-size: 20px;
     width: 300px;
     filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
@@ -202,11 +203,21 @@ h2 {
 .support-heading {
     display: flex;
     align-items: center;
+    padding-top: 1rem;
     gap: 2rem;
 }
 
-.support-card1 {
-    padding-bottom: 44px;
+.support-button {
+    background-color: rgb(255, 196, 0);
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem 1rem;
+    margin-top: auto;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
 }
 
 /* Hotline sida */
@@ -228,8 +239,8 @@ h2 {
     font-size: 1.2rem;
     font-weight: bold;
     border-radius: 25px;
-    border: 2px solid rgb(255, 208, 0);
-    background-color: yellow;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     color: black;
     filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
 }
