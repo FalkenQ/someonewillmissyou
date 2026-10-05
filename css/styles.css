@@ -1,258 +1,95 @@
+/* Mobile first: grundreglerna gäller små skärmar.
+   Ersätt CSS/styles.css med denna fil; din HTML kan vara kvar. */
+* { box-sizing: border-box; }
+
 body {
     font-family: Arial, sans-serif;
     font-size: 15px;
+    line-height: 1.5;
+    color: white;
+    background-color: #06192c;
     background-image: url("../Images/background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 100vh;
     margin: 0;
-    background-attachment: fixed;
 }
 
-li {
-    list-style: none;
+a { text-decoration: none; color: inherit; }
+li { list-style: none; }
+img { max-width: 100%; }
+a:focus-visible, button:focus-visible, select:focus-visible {
+    outline: 3px solid #ffc400;
+    outline-offset: 5px;
 }
 
-a {
-    text-decoration: none;
-    color: inherit
-}
-
-/* Början av Header styling */
-
-.header-navigation a {
-    color: white;
-    font-family: poppins;
-}
-
-h1 {
-    color: white;
-    text-align: left;
-    padding-left: 50px;
-    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5));
-}
-
+/* Header: staplad på mobil, en rad när det finns plats. */
 header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    width: calc(100% - 2rem);
+    max-width: 1440px;
+    margin: 1rem auto;
+    padding: 1rem;
     border: 1px solid #0362bb60;
     border-radius: 10px;
-    margin-top: 1rem;
-    margin: 50px 50px;
+    background-color: #06192cb3;
     box-shadow: 0 0 10px #0362bb60;
 }
-
+header > a, header nav { min-width: 768px; }
+h1 {
+    margin: 0;
+    font-size: clamp(1.35rem, 4vw, 2rem);
+    text-align: center;
+    overflow-wrap: anywhere;
+}
 .header-navigation {
     display: flex;
-    gap: 3rem;
-    padding-right: 50px;
-    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5));
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem 1rem;
+    padding: 0;
+    margin: 0;
+}
+.header-navigation a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    font-family: Poppins, Arial, sans-serif;
 }
 
-.header-navigation :hover {
-    color: rgb(253, 252, 252);
-    text-shadow: 0 0 8px rgb(252, 252, 252);
+/* Innehållet har flexibel bredd i stället för fasta mobilbredder. */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 3rem;
 }
-
-a h1:hover {
-    color: rgb(253, 252, 252);
-    text-shadow: 0 0 8px rgb(252, 252, 252);
+h2 {
+    margin: 0 0 1.5rem;
+    font-size: clamp(2rem, 5vw, 4.5rem);
+    line-height: 1.2;
+    text-align: center;
+    font-family: Poppins, Arial, sans-serif;
+    overflow-wrap: anywhere;
+    text-shadow: 2px 2px 1px #0000004d;
 }
-
-/* Början av main Styling */
-.main-navigation a {
-    color: white;
+.support-text, .hotline-text {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    font-size: clamp(1.1rem, 2.5vw, 2rem);
+    text-align: center;
+    text-shadow: 2px 2px 1px #0000004d;
 }
-
 .main-navigation {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1.5rem;
-}
-
-#find {
-    background-color: rgb(255, 196, 0);
-    border-radius: 25px;
-    border-style: solid;
-    border-color: rgb(207, 160, 4);
-    border-width: 2px;
-    padding: 1rem;
-    padding-left: 3.5rem;
-    padding-right: 2.5rem;
-    color: black;
-    font-family: poppins;
-    font-size: 1rem;
-    font-weight: bold;
-    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
-    box-shadow: 0 0 10px rgb(255, 196, 0);
-    transition: background-color 0.5s ease, color 0.5s ease;
-}
-
-.main-navigation #find:hover {
-    background-color: rgb(200, 214, 6);
-    color: rgb(0, 0, 0);
-    transform: translateY(-2px);
-}
-
-#help {
-    background-color: #0362bb50;
-    border-radius: 25px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #0362bb60;
-    padding: 1rem;
-    padding-left: 2.5rem;
-    color: white;
-    font-family: poppins;
-    font-size: 1rem;
-    font-weight: bold;
-    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
-    box-shadow: 0 0 10px #0387bb50;
-    transition: background-color 0.5s ease, color 0.5s ease;
-}
-
-.main-navigation #help:hover {
-    background-color: #02b7ff50;
-    color: rgb(247, 247, 247);
-    transform: translateY(-2px);
-}
-
-span {
-    margin-left: 1.5rem;
-}
-
-h2 {
-    color: white;
-    text-align: center;
-    font-size: 4.5rem;
-    font-family: poppins;
-    margin-bottom: 1.5rem;
-    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
-}
-
-.support-text {
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-    width: 650px;
-    margin: auto;
-    margin-bottom: 3.5rem;
-    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
-}
-
-/* Support cards sektionen */
-.support-cards {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    margin-top: 150px;
-    gap: 40px;
-}
-
-.support-card1,
-.support-card2,
-.support-card3 {
-    display: flex;
     flex-direction: column;
-    background-color: #0362bb25;
-    border-radius: 15px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #0362bb60;
-    padding: 20px;
-    width: 500px;
-    box-sizing: border-box;
-    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
-    transition: background-color 0.5s ease, color 0.5s ease;
-}
-
-.support-cards h2{
-    color: white;
-    font-size: 23px;
-    margin-top: auto;
-    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
-}
-
-.support-cards p {
-    color: white;
-    padding-left: 6.5rem;
-    padding-bottom: 1rem;
-    font-size: 20px;
-    width: 300px;
-    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
-}
-
-.support-card1:hover,
-.support-card2:hover,
-.support-card3:hover {
-    background-color: #02b7ff50;
-    color: rgb(0, 0, 0);
-    transform: translateY(-2px);
-}
-
-.support-card1 .support-button:hover,
-.support-card2 .support-button:hover,
-.support-card3 .support-button:hover {
-    background-color: rgb(199, 154, 5);
-    color: rgb(0, 0, 0);
-    transform: translateY(-2px);
-    box-shadow: 0 0 10px rgb(255, 251, 0);
-}
-
-.support-cards img {
-    background-color: #029aff50;
-    padding: 1rem;
-    border-radius: 100px;
-    width: 40px;
-    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
-}
-
-.support-heading {
-    display: flex;
-    align-items: center;
-    padding-top: 1rem;
-    gap: 2rem;
-}
-
-.support-button {
-    background-color: rgb(255, 196, 0);
-    font-size: 15px;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 10px;
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0.75rem 1rem;
-    margin-top: auto;
-    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
-    transition: background-color 0.5s ease, color 0.5s ease;
-}
-
-/* Hotline sida */
-.hotline-text {
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-    width: 700px;
-    margin: auto;
-    margin-bottom: 2.5rem;
-}
-
-#country {
-    display: block;
-    margin-left: 600px;
-    padding: 0.8rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 25px;
-    border: 2px solid rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    color: black;
-    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+    gap: 1rem;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 0;
 }
