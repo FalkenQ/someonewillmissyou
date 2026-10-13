@@ -256,3 +256,75 @@ h2 {
     color: black;
     filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
 }
+
+@media (max-width: 768px) {
+
+    /* Header för phone */
+    header {
+        flex-direction: column;
+        margin: 15px;
+        padding: 5px;
+
+    }
+
+    h1 {
+        align-items: center;
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .header-navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 20px;
+    }
+
+    /* Main */
+    main {
+        padding-bottom: 20px; 
+    }
+    h2 {
+        font-size: 50px;
+    }
+
+    .support-text {
+        font-size: 25px;
+        width: 300px;
+    }
+
+    .main-navigation {
+        flex-direction: column;
+        gap: 50px;
+        margin: auto;
+    }
+
+    #find {
+        margin: 40px;
+    }
+
+    #help {
+        margin: 5px;
+    }
+
+    /* Support cards */
+    .support-cards {
+        flex-direction: column;
+    }
+
+    .support-card1,
+    .support-card2,
+    .support-card3 {
+        width: 400px;
+        margin: auto;
+    }
+
+    .support-heading {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .support-cards p {
+        text-align: center;
+        padding-left: 30px;
+    }
+}
