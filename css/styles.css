@@ -242,9 +242,14 @@ h2 {
     margin-bottom: 2.5rem;
 }
 
+.country-option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
 #country {
-    display: block;
-    margin-left: 600px;
+    width: 240px;
     padding: 0.8rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -255,6 +260,13 @@ h2 {
     background-color: rgb(255, 255, 255);
     color: black;
     filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+}
+
+.country-label {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
 }
 
 @media (max-width: 768px) {
@@ -287,7 +299,12 @@ h2 {
         font-size: 50px;
     }
 
-    .support-text {
+    .hotline-header {
+        font-size: 45px;
+    }
+
+    .support-text,
+    .hotline-text {
         font-size: 25px;
         width: 300px;
     }
@@ -326,5 +343,19 @@ h2 {
     .support-cards p {
         text-align: center;
         padding-left: 30px;
+    }
+
+    .country-option {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .country-label {
+        margin-right: 60px;
+    }
+
+    #country {
+        margin-right: 60px;
     }
 }
