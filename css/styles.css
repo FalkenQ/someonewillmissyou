@@ -143,6 +143,37 @@ h2 {
     filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
 }
 
+.about-header {
+    margin: 0;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+    text-align: center;
+}
+
+.about-brand {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+    text-decoration: underline;
+}
+
+.about-paragraph {
+    border-width: 2rem;
+    color: white;
+    background-color: rgba(87, 88, 88, 0.3);
+    outline: solid 1px;
+    border-radius: 10px;
+    font-size: 20px;
+    max-width: 900px;
+    margin-left: 510px;
+    margin-inline: auto;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 2rem;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
+}
+
 /* Support cards sektionen */
 .support-cards {
     display: flex;
@@ -358,4 +389,19 @@ h2 {
     #country {
         margin-right: 60px;
     }
+
+    .about-header {
+        font-size: 50px;
+    }
+
+    .about-brand {
+    color: white;
+    font-size: 30px;
+    padding: 0px 40px;
+    }
+
+    .about-paragraph {
+        margin: 1rem;
+    }
+    
 }
