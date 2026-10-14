@@ -263,6 +263,45 @@ h2 {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
+input[type=text], select, textarea {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+label {
+    color: white;
+}
+
+input[type=submit] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(172, 171, 171);
+}
+
+#subject {
+    resize: vertical;
+}
+
+.contact-container {
+    margin-inline: auto;
+    margin-top: 100px;
+    width: 40%;
+    background-color: #029aff50;
+    border-radius: 5px 5px 0px 0px;
+    padding: 15px;
+
+}
+
 /* Hotline sida */
 .hotline-text {
     color: white;
@@ -402,6 +441,10 @@ h2 {
 
     .about-paragraph {
         margin: 1rem;
+    }
+
+    .contact-container {
+        width: calc(100% - 30px);
     }
     
 }

@@ -42,14 +42,44 @@
                 Take the first step towards healing and 
                 support by reaching out to someone. 
             </p>
-        <!-- navigationsmeny -->
 
+        <!-- navigationsmeny -->
         <nav>
             <ul class = "main-navigation">
                 <li><a href="talk.html" id="find">Find support<span aria-hidden="true">⟶</span></a></li>
                 <li><a href="hotline.html" id="help">Help someone I care about<span aria-hidden="true">⟶</span></a></li>
             </ul>
         </nav>
+
+        <div class="contact-container">
+            <form id="contact-form">
+                <label for="fName">First name:</label>
+                <input type="text" id="fName" placeholder="Anders" required>
+
+                <label for="lName">Last name:</label>
+                <input type="text" id="lName" placeholder="Andersson" required>
+
+                <label for="email">Email adress:</label>
+                <input type="text" id="email" placeholder="ander.andersson@gmail.com" required>
+
+                <select id="subject-options" name="Subjects">
+                    <option value="choose">Choose a subject</option>
+                    <option value="error">Site errors</option>
+                    <option value="apply">Apply</option>
+                    <option value="ideas">Ideas</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="subject">Subject:</label>
+                <textarea id="subject" name="subject" placeholder="What's on your mind" required></textarea>
+
+                <input type="submit" value="Send">
+
+
+
+
+            </form>
+        </div>
     </main>
     
 </body>
