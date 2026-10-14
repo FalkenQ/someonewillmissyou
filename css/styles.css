@@ -339,6 +339,10 @@ input[type=submit]:hover {
     filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
 }
 
+.menu-toggle {
+    display: none;
+}
+
 @media (max-width: 768px) {
 
     /* Header för phone */
@@ -347,6 +351,10 @@ input[type=submit]:hover {
         margin: 15px;
         padding: 5px;
 
+    }
+
+    .menu-toggle {
+        display: block;
     }
 
     h1 {
