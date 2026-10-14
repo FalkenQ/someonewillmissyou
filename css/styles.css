@@ -355,6 +355,24 @@ input[type=submit]:hover {
 
     .menu-toggle {
         display: block;
+        background-color: #029aff00;
+        margin-right: 300px;
+        color: white;
+        border: none;
+        padding-bottom: 5px;
+        font-size: 20px;
+        filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
+    }
+
+    .header-navigation {
+        display: none;
+    }
+
+    .header-navigation.isOpen {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin-right: 240px;
     }
 
     h1 {
