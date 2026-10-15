@@ -360,6 +360,14 @@ input[type=submit]:hover {
     display: none;
 }
 
+.site-footer {
+    color: white;
+    text-decoration: underline;
+    font-size: 18px;
+    background-color: #029aff15;
+    padding: 20px;
+}
+
 @media (max-width: 768px) {
 
     /* Header för phone */
