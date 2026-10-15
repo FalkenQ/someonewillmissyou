@@ -272,6 +272,14 @@ h2 {
 
 }
 
+#validatemessage {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 0;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+}
+
 input[type=text], select, textarea, #email {
     width: 100%;
     border: 1px solid black;
@@ -481,5 +489,12 @@ input[type=submit]:hover {
     .contact-container {
         width: calc(100% - 30px);
     }
+
+    #validatemessage {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+}
     
 }

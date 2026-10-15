@@ -60,7 +60,8 @@
 
         <section class="contact-container">
             <ul id="errorlist"></ul>
-            <form id="contact-form">
+            <ul id="validatemessage"></ul>
+            <form id="contact-form" novalidate>
                 <label for="fName">First name:</label>
                 <input type="text" id="fName" placeholder="Anders">
 
@@ -70,7 +71,7 @@
                 <label for="email">Email adress:</label>
                 <input type="email" id="email" placeholder="ander.andersson@gmail.com">
 
-                <label for="subjects-options">Subjects:</label>
+                <label for="subject-options">Subjects:</label>
                 <select id="subject-options" name="Subjects">
                     <option value="choose" selected>Choose a subject</option>
                     <option value="error">Site errors</option>
