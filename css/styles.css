@@ -263,7 +263,7 @@ h2 {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-input[type=text], select, textarea {
+input[type=text], select, textarea, #email {
     width: 100%;
     border: 1px solid black;
     border-radius: 5px;
