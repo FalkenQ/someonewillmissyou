@@ -366,6 +366,7 @@ input[type=submit]:hover {
     font-size: 18px;
     background-color: #029aff15;
     padding: 20px;
+    margin-top: 50px;
 }
 
 @media (max-width: 768px) {
