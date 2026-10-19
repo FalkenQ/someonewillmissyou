@@ -533,6 +533,17 @@ input[type=submit]:hover {
     font-size: 15px;
     font-weight: bold;
     filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
-}
+    }
+
+    #countries, #hotlinetitle {
+        padding-right: 45px;
+    }
+
+    #hotline-info {
+        width: 90%;
+        text-align: center;
+        margin-right: 50px;
+        filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.8));
+    }
     
 }
