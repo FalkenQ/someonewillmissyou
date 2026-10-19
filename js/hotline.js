@@ -12,6 +12,7 @@ countrySelect.addEventListener("change", function() {
 
     hotlineInfo.textContent = "";
 
+    // if sats för att kolla vilket land som valt och utskrift av rätt information
     if(selectedCountry === "se") {
 
         hotlineNumberEl.textContent = "Telefon: 90 390.";
@@ -54,6 +55,7 @@ countrySelect.addEventListener("change", function() {
 
     } else {
 
+        // Återställer till start
         hotlineInfo.textContent = "Choose a country.";
 
     }
