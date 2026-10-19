@@ -4,10 +4,14 @@
 const menuButton = document.querySelector(".menu-toggle");
 const headerMenu = document.querySelector(".header-navigation");
 
+// Eventlyssnare efter att man öppnar/stänger huvudmenyn
 menuButton.addEventListener("click", function() {
-    headerMenu.classList.toggle("isOpen");
-    console.log("du öppnade menyn");
-});
+    const isOpen = headerMenu.classList.toggle("isOpen");
 
-console.log(menuButton);
-console.log("JS laddad");
+    // if sats för att kolla om menyn är öppen eller stängd
+    if(isOpen) {
+        console.log("Du öppnade menyn.");
+    } else {
+        console.log("Du stängde menyn.");
+    }
+});

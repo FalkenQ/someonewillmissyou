@@ -8,10 +8,12 @@ const subjectInput = document.querySelector("#subject");
 const errorList = document.querySelector("#errorlist");
 const validateMessage = document.querySelector("#validatemessage");
 
+// Validering av kontaktformuläret
 function validateForm() {
 
-    errorList.textContent = "";
+    errorList.textContent = ""; // Tömmer fältet efter varje check
 
+    // if sats för att validera varje fält
     if(fullnameInput.value.trim() === "") {
         const errorListEl = document.createElement("li");
         errorListEl.textContent = "Input a valid name...";
@@ -37,6 +39,7 @@ function validateForm() {
         errorList.appendChild(errorListEl);
     }
 
+    // Checkar om error listan är tom eller inte
     if(errorList.children.length === 0) {
         return true;
     } else {
@@ -44,10 +47,13 @@ function validateForm() {
     }
 }
 
+// Eventlyssnare för skicka in
 contactForm.addEventListener("submit", function (event) {
+
     event.preventDefault();
     validateMessage.textContent = "";
     
+    // Kollar ifall valideringsformuläret kommer tillbaka true
     if(validateForm() === true) {
         console.log("Alla fält är korrekta.");
         const validateMessageEl = document.createElement("li");

@@ -3,6 +3,7 @@
 const countrySelect = document.querySelector("#country");
 const hotlineInfo = document.querySelector("#hotline-info");
 
+// Eventlyssnare för att visa rätt information efter vilker land användaren väljer
 countrySelect.addEventListener("change", function() {
     const selectedCountry = countrySelect.value;
     const hotlineNumberEl = document.createElement("li");
