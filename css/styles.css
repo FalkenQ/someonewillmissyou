@@ -369,6 +369,35 @@ input[type=submit]:hover {
     margin-top: 50px;
 }
 
+#countries {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
+    margin-bottom: 5px;
+}
+
+#hotlinetitle {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
+}
+
+#hotline-info {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 5px;
+    background-color: #029aff40;
+    width: 25%;
+    border-radius: 10px;
+    filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.8));
+}
+
 @media (max-width: 768px) {
 
     /* Header för phone */
