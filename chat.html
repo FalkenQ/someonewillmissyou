@@ -24,7 +24,6 @@
 
         <nav>
             <ul class="header-navigation">
-            <!--<li><a href="support.html">Find support</a></li>--> <!-- Detta är något jag vill lägga till när jag jobbar på den efter avslutad kurs. -->
                 <li><a href="talk.html">Talk to someone</a></li>
                 <li><a href="hotline.html">Hotline</a></li>
                 <li><a href="about.html">About</a></li>
@@ -40,9 +39,20 @@
         </p>
 
         <section class="post-container">
-            <label for="post">Tell someone you care:</label>
-            <textarea id="post" name="post" placeholder="You're doing great..."></textarea>
-            <input type="button" value="Send">
+            <h3 id="postheader"></h3>
+            <p id="posttext"></p>
+        </section>
+
+        <section class="yourpost-container">
+            <h3 id="thoughts">Post your thoughts.</h3>
+
+            <label for="post-title">Title:</label>
+            <textarea id="post-title" name="post-title" placeholder="Title"></textarea>
+
+            <label for="post-text">Tell someone you care:</label>
+            <textarea id="post-text" name="post-text" placeholder="You're doing great..."></textarea>
+
+            <input type="submit" id="post-button" value="Send">
         </section>
 
     </main>

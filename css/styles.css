@@ -399,6 +399,33 @@ input[type=submit]:hover {
     filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.8));
 }
 
+/* chat */
+
+#thoughts {
+    color: white;
+    font-size: 30px;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
+    text-align: center;
+    text-decoration: underline;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.yourpost-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
+}
+
+#post-button {
+    width: 8%;
+}
+
 @media (max-width: 768px) {
 
     /* Header för phone */
