@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/main.js" defer></script>
-    <script src="js/hotline.js" defer></script>
+    <script src="js/post.js" defer></script>
 
 </head>
 
@@ -46,13 +46,18 @@
         <section class="yourpost-container">
             <h3 id="thoughts">Post your thoughts.</h3>
 
-            <label for="post-title">Title:</label>
-            <textarea id="post-title" name="post-title" placeholder="Title"></textarea>
+            <form id="post-form" novalidate>
+                <ul id="errorlist"></ul>
+                <ul id="validatemessage"></ul>
 
-            <label for="post-text">Tell someone you care:</label>
-            <textarea id="post-text" name="post-text" placeholder="You're doing great..."></textarea>
+                <label for="post-title">Title:</label>
+                <textarea id="post-title" name="post-title" placeholder="Title"></textarea>
 
-            <input type="submit" id="post-button" value="Send">
+                <label for="post-text">Tell someone you care:</label>
+                <textarea id="post-text" name="post-text" placeholder="You're doing great..."></textarea>
+
+                <input type="submit" id="post-button" value="Send">
+            </form>
         </section>
 
     </main>

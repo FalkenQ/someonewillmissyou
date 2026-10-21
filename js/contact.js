@@ -60,4 +60,4 @@ contactForm.addEventListener("submit", function (event) {
         validateMessageEl.textContent = "Thank you, and we'll be in contact shortly.";
         validateMessage.appendChild(validateMessageEl);
     }
-})
+});
