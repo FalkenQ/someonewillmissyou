@@ -573,5 +573,14 @@ label {
         margin-right: 50px;
         filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.8));
     }
+
+    .yourpost-container {
+    width: 80%;
+    margin: auto;
+    }
+
+    #post-button {
+    width: 20%;
+}
     
 }
