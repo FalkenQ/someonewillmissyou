@@ -37,6 +37,12 @@ function createPost() {
 
 }
 
+function savePostHistory() {
+
+    // Spara inlägget
+    localStorage.setItem("post", JSON.stringify(post));
+}
+
 function loadPostHistory() {
 
     // Hämta sparat inlägg
