@@ -32,7 +32,7 @@ function createPost() {
     post.push(postInformation);
 
     // Spara inlägget
-    loadPostHistory();
+    savePostHistory();
 
 
 }
