@@ -426,6 +426,20 @@ label {
     width: 8%;
 }
 
+.post-container {
+    background-color: rgb(180, 173, 140);
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
+}
+
+#post-section {
+    font-size: 45px;
+    text-decoration: underline;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
+}
+
 @media (max-width: 768px) {
 
     /* Header för phone */
