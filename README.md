@@ -16,9 +16,7 @@ Which will show you the support line, opening hours and emergency line.
 You can also contact us with either a question, site errors, ideas or something else that's on your mind.
 
 ## Planned features
-- Messageboard, for people to leave a letter. That is either someone venting out, or someone typing in some words of encouragement.
-The idea for that will be, you will be given a letter of encouragement at random to help you through your day.
-- Also thinking about adding a check-in feature. With some additional features to it.
+- Thinking about adding a check-in feature. With some additional features to it.
 
 ## Features
 This website is for desktop and mobile use. Desktop version is planned with less scrolling. Plan was to make as much information fit on the screen without scrolling. Without making it feel cramped.
