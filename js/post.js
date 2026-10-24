@@ -54,15 +54,14 @@ function loadPostHistory() {
 function renderPost() {
 
     if(post.length > 0) {
-        const postInfo = post[post.length - 1];
+        const randomPost = Math.floor(Math.random() * post.length);
+        const postInfo = post[randomPost];
         const postTitle = postInfo.head;
         const postParagraph = postInfo.paragraph;
 
         previewPostHeader.textContent = postTitle;
         previewPostParagraph.textContent = postParagraph;
     }
-    console.log(previewPostHeader);
-    console.log(previewPostParagraph);
 }
 
 function validateForm() {
@@ -102,3 +101,7 @@ postForm.addEventListener("submit", function (event) {
         createPost();
     }
 });
+
+// När sidan laddas in
+loadPostHistory(); // Ladda in historiken
+renderPost(); // Ladda in ett inlägg
