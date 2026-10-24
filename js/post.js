@@ -18,10 +18,6 @@ function createPost() {
     const postTitle = postTitleInput.value;
     const postParagraph = postTextInput.value;
 
-    // Lägg till nya inlägget
-    previewPostHeader.textContent = postTitle;
-    previewPostParagraph.textContent = postParagraph;
-
     // skapa ett objekt för posten
     const postInformation = {
         head: postTitle,
@@ -33,7 +29,9 @@ function createPost() {
 
     // Spara inlägget
     savePostHistory();
+    renderPost();
 
+    console.log(post);
 
 }
 
@@ -51,6 +49,20 @@ function loadPostHistory() {
     if(savedPost !== null) {
         post = JSON.parse(savedPost);
     }
+}
+
+function renderPost() {
+
+    if(post.length > 0) {
+        const postInfo = post[post.length - 1];
+        const postTitle = postInfo.head;
+        const postParagraph = postInfo.paragraph;
+
+        previewPostHeader.textContent = postTitle;
+        previewPostParagraph.textContent = postParagraph;
+    }
+    console.log(previewPostHeader);
+    console.log(previewPostParagraph);
 }
 
 function validateForm() {
@@ -80,11 +92,13 @@ function validateForm() {
 postForm.addEventListener("submit", function (event) {
 
     event.preventDefault();
+    validatePost.textContent = "";
 
     if(validateForm() === true) {
         console.log("Valideringen gick igenom.");
         const validatePostEl = document.createElement("li");
         validatePostEl.textContent = "Thanks for you kind words.";
         validatePost.appendChild(validatePostEl);
+        createPost();
     }
 });

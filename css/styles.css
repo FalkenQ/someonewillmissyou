@@ -430,6 +430,7 @@ label {
     background-color: rgb(180, 173, 140);
     width: 60%;
     margin: auto;
+    padding-bottom: 10px;
     border-radius: 10px;
     filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
 }
@@ -437,6 +438,14 @@ label {
 #post-section {
     font-size: 45px;
     text-decoration: underline;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
+}
+
+.post-paper {
+    background-color: white;
+    border-radius: 3px;
+    margin: 20px;
+    padding: 20px;
     filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
 }
 
@@ -595,6 +604,12 @@ label {
 
     #post-button {
     width: 20%;
-}
+    }
+
+    .post-container {
+        width: 90%;
+    }
+
+
     
 }
