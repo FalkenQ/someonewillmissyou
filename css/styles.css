@@ -177,7 +177,6 @@ h2 {
 /* Support cards sektionen */
 .support-cards {
     display: flex;
-    align-items: stretch;
     justify-content: center;
     margin-top: 150px;
     gap: 40px;
