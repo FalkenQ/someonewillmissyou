@@ -3,6 +3,10 @@
 const countrySelect = document.querySelector("#country");
 const hotlineInfo = document.querySelector("#hotline-info");
 
+const hotlineMessage = document.createElement("li");
+hotlineMessage.textContent = "Choose a country.";
+hotlineInfo.appendChild(hotlineMessage);
+
 // Eventlyssnare för att visa rätt information efter vilker land användaren väljer
 countrySelect.addEventListener("change", function() {
     const selectedCountry = countrySelect.value;
@@ -56,7 +60,9 @@ countrySelect.addEventListener("change", function() {
     } else {
 
         // Återställer till start
-        hotlineInfo.textContent = "Choose a country.";
+        const hotlineMessage = document.createElement("li");
+        hotlineMessage.textContent = "Choose a country.";
+        hotlineInfo.appendChild(hotlineMessage);
 
     }
 });
